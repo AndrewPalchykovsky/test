@@ -1,0 +1,35 @@
+// USER VARIABLES SECTION
+
+$accent: #00abff // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$decimal: DecimaNovaPro, sans-serif
+
+
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: local($fname), url($furl) format('woff2')
+
+@include font('DecimaNovaProLight', normal, 300, 'src/assets/fonts/DecimaNovaProLight.woff2')
+@include font('DecimaNovaProBold', normal, 700, 'src/assets/fonts/DecimaNovaProBold.woff2')
+@include font('DecimaNovaProLt', normal, 400, 'src/assets/fonts/DecimaNovaProLt.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-family: $decimal
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $textcolor
