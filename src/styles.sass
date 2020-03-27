@@ -1,1 +1,53 @@
 @import config
+
+.navbar
+    background: $bg
+    border-top: 4px solid $accent
+    border-bottom: 1px solid rgb(0,53,98, 0.3)
+
+
+.navbar-dark .navbar-nav .active > .nav-link
+    color: $accent!important
+
+.btn-outline-primary
+    color: $accent
+    border-color: $accent
+
+.btn
+    border-radius: 1.25rem
+    padding: 10px 21px 11px
+    line-height: 1
+    font-size: 0.875em
+    font-weight: bold
+    text-transform: uppercase
+    &:hover
+        background-color: transparent
+        color: white
+
+.btn-outline-light:not(:disabled):not(.disabled):active
+    @extend  .btn
+
+
+.navbar-expand-lg .navbar-nav .nav-link
+    padding-right: 1.375rem
+    padding-left: 1.375rem
+    font-size: 0.875em
+    text-transform: uppercase
+    color: white
+    font-weight: bold
+    padding-top: 0!important
+    padding-bottom: 0!important
+    line-height: 1
+
+.navbar-nav .nav-item:last-of-type
+    padding-left: 1.375rem
+    padding-top: 18px
+    padding-bottom: 16px
+
+
+
+
+
+
+
+
