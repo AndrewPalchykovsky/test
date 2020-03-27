@@ -1,0 +1,36 @@
+<div class="service-content-container">
+
+    <div class="service-content-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h1 class="service-content-header__header-title text-center mb-0">What We Do</h1>
+                    <p class="service-content-header__header-text text-center"> We launch different types of platforms
+                        and
+                        operating
+                        systems using distinguishes of every platform or operating system
+                        as adventage and a powerful tool.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-content-holder pt-5">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-sm-6 text-center" *ngFor="let service of services">
+                    <div
+                        class="service-content-holder__img-holder d-flex justify-content-center align-items-center flex-column">
+                        <img src="{{service.img}}" alt="{{service.title}}" class="service-content-holder__img">
+                    </div>
+                    <h1 class="service-content-holder__title">{{service.title}}</h1>
+                    <p class="service-content-holder__content">{{service.content}}</p>
+
+                    <a href="#" class="btn btn-outline-primary text-capitalize service-content-holder__link">Learn
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
