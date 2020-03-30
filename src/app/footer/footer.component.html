@@ -40,16 +40,20 @@
                     <ul class="footer-nav  align-items-center d-flex flex-row pl-0 mb-0">
                         <li class="list-unstyled"><a href=""
                                 class="footer-bottom__link text-decoration-none text-capitalize">Home</a></li>
-                        <li class="list-unstyled"><a href=""
+                        <li class="list-unstyled"><a [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active" routerLink="case-studies"
                                 class="footer-bottom__link text-decoration-none text-capitalize">Case
                                 Studies</a>
                         </li>
-                        <li class="list-unstyled active"><a href=""
+                        <li class="list-unstyled "><a routerLink="" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active"
                                 class="footer-bottom__link text-decoration-none text-capitalize">Services</a></li>
-                        <li class="nav-item list-unstyled"><a href=""
+                        <li class="nav-item list-unstyled"><a routerLink="expertise" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active"
                                 class="footer-bottom__link text-decoration-none text-capitalize">Expertise</a>
                         </li>
-                        <li class="list-unstyled"><a href=""
+                        <li class="list-unstyled"><a [routerLinkActiveOptions]="{exact:
+                            true}" routerLink="about" routerLinkActive="active"
                                 class="footer-bottom__link text-decoration-none text-capitalize">About</a></li>
                         <li class="list-unstyled"><a href=""
                                 class="footer-bottom__link footer-bottom__link_last text-decoration-none text-capitalize">Contact
