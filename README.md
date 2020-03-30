@@ -21,4 +21,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Run on mobile
 
-Run `npm start-server`
+Run `npm run start-server` to have access on other devices. Please check out your network settings and set `--host`  to right address.
