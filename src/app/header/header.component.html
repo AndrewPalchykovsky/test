@@ -4,9 +4,12 @@
         <a class="navbar-brand p-0" href="#">
             <img src="assets/img/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler border-0" type="button" (click)="showNav()">
+            <svg width="34" height="22" viewBox="0 0 14 10" fill="white">
+                <rect width="34" height="2" x="0" y="0"></rect>
+                <rect width="34" height="2" x="0" y="4"></rect>
+                <rect width="34" height="2" x="0" y="8"></rect>
+            </svg>
         </button>
 
         <div class="collapse navbar-collapse">
@@ -32,3 +35,28 @@
 
     </div>
 </nav>
+
+<div class="navbar_mobile d-flex flex-column align-items-center justify-content-center" [class.showNav]="isHidden">
+
+    <span class="navbar_mobile-close" (click)="isHidden = false">╳</span>
+
+    <ul class="navbar_mobile-list">
+        <li class="nav-item ">
+            <a class="nav-link text-uppercase" href="#">Case studies</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link text-uppercase" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-uppercase" href="#">Experise</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-link_last text-uppercase" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="navbar_mobile-button">Contact Us</a>
+        </li>
+
+    </ul>
+
+</div>

@@ -40,3 +40,46 @@
     .navbar-toggler
         padding: 0.15rem 0.35rem
 
+
+
+// mobile
+.navbar_mobile
+    position: fixed
+    z-index: 1031
+    background-color: white
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    right: -500px
+    display: inline-block
+    transition: 0.4s right ease
+
+.navbar_mobile-list
+    list-style-type: none
+    padding-left: 0
+    margin-left: 0
+    margin-bottom: 0
+    text-align: center
+    a
+        color: $accent
+    .navbar_mobile-button
+        height: 30px
+        width: 118px
+        border: 1px solid $accent
+        line-height: 30px
+        font-size: 1rem
+        border-radius: 30px
+        display: inline-block
+        text-align: center
+
+.navbar_mobile-close
+    color: black
+    font-size: 20px
+    position: absolute
+    right: 20px
+    top: 20px
+
+.showNav
+    right: 0
+    transition: 0.4s right ease
