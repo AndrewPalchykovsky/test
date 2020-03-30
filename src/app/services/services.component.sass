@@ -48,6 +48,13 @@
 @media (max-width: 554px)
     .filter-container
         overflow-x: auto
+        &::-webkit-scrollbar
+            width: 0px
+            background: transparent!important
+            display: none
+            -ms-overflow-style: none
+        &::-webkit-scrollbar-thumb
+            background: transparent!important
     .hero-content
         min-height: 147px
     .hero-content__text
