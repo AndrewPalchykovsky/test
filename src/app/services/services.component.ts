@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Service } from './service.model';
 
 @Component({
   selector: 'app-services',
@@ -8,54 +7,75 @@ import { Service } from './service.model';
 })
 export class ServicesComponent implements OnInit {
 
+  showContent = 'All';
   showAll = true;
-  showApps = true;
-  showServices = true;
-  showAr = true;
-  showDesign = true;
-  showDev = true;
-
-  services: Service[] = [
-    {
-      img: '../../assets/img/services-apps.png',
-      title: 'Mobile Apps',
-      // tslint:disable-next-line:max-line-length
-      content: 'We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.',
-      link: '/mobile-apps'
-    },
-    {
-      img: '../../assets/img/services-webservices.png',
-      title: 'Web Services',
-      // tslint:disable-next-line:max-line-length
-      content: 'We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.',
-      link: '/web-services'
-    },
-    {
-      img: '../../assets/img/services-augmented-reality.png',
-      title: 'Augmented Reality',
-      // tslint:disable-next-line:max-line-length
-      content: 'We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.',
-      link: '/augmented-reality'
-    },
-    {
-      img: '../../assets/img/services-design.png',
-      title: 'UX/UI Design',
-      // tslint:disable-next-line:max-line-length
-      content: 'We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.',
-      link: '/ux-ui-design'
-    },
-    {
-      img: '../../assets/img/services-development.png',
-      title: 'Development',
-      // tslint:disable-next-line:max-line-length
-      content: 'We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.',
-      link: '/development'
-    },
-  ];
+  showMobile: boolean;
+  showWeb: boolean;
+  showAr: boolean;
+  showDesign: boolean;
+  showDev: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+  showAllClick() {
+    this.showContent = 'All';
+    this.showAll = true;
+    this.showMobile = true;
+    this.showWeb = false;
+    this.showAr = false;
+    this.showDesign = false;
+    this.showDev = false;
+
+  }
+  showMobileClick() {
+    this.showContent = 'Mobile';
+    this.showAll = false;
+    this.showMobile = true;
+    this.showWeb = false;
+    this.showAr = false;
+    this.showDesign = false;
+    this.showDev = false;
+  }
+
+  showWebClick() {
+    this.showContent = 'Web';
+    this.showAll = false;
+    this.showMobile = false;
+    this.showWeb = true;
+    this.showAr = false;
+    this.showDesign = false;
+    this.showDev = false;
+  }
+  showArClick() {
+    this.showContent = 'Ar';
+    this.showAll = false;
+    this.showMobile = false;
+    this.showWeb = false;
+    this.showAr = true;
+    this.showDesign = false;
+    this.showDev = false;
+  }
+
+  showDesignClick() {
+    this.showContent = 'Design';
+    this.showAll = false;
+    this.showMobile = false;
+    this.showWeb = false;
+    this.showAr = false;
+    this.showDesign = true;
+    this.showDev = false;
+  }
+  showDevClick() {
+    this.showContent = 'Dev';
+    this.showAll = false;
+    this.showMobile = false;
+    this.showWeb = false;
+    this.showAr = false;
+    this.showDesign = false;
+    this.showDev = true;
+  }
+
 
 }
