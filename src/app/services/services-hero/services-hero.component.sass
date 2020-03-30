@@ -1,5 +1,8 @@
 @import ../../../config
 
+.d-mobile
+    display: none
+
 .hero-content
     min-height: 423px
     background-color: $bg
@@ -30,3 +33,19 @@
     .nav-item.active
         .nav-link
             color: $accent
+
+@media (max-width: 980px)
+    .hero-content__text
+        width: 103%
+@media (max-width: 979px)
+    .d-desktop
+        display: none
+    .d-mobile
+        display: block
+@media (max-width: 554px)
+    .filter-container
+        overflow-x: auto
+    .hero-content
+        min-height: 147px
+    .hero-content__text
+        display: none

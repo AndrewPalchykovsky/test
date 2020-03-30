@@ -1,7 +1,7 @@
 @import ../../../config
 
 .service-content-header__header-title
-    padding-bottom: 2.5625rem
+    padding-bottom: 2.3125rem
     line-height: 1
     font-family: serif
     color: #105788
@@ -72,3 +72,30 @@
 
 .service-content-cta__button
     margin-top: 40px
+
+.service-content-cta__text_mobile
+    display: none
+
+@media (max-width: 992px)
+    .service-content-header:after
+        background-size: cover
+        background-position: center
+@media (max-width: 768px)
+    .service-content-cta__text.service-content-cta_desktop
+        br
+            display: none
+@media (max-width:  554px)
+    .service-content-header__header-text,
+    .service-content-holder__content,
+    .service-content-cta__text
+        font-size: 1.25rem
+        line-height: 1.875rem
+
+    .service-content-cta_desktop
+        display: none
+
+    .service-content-cta__text_mobile
+        display: block
+
+    .service-content-holder__img-holder
+        height: 250px
