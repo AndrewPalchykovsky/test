@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark p-0 fixed-top">
+<nav class="navbar navbar_desktop navbar-expand-md navbar-dark p-0 fixed-top">
     <div class="container-lg ">
 
         <a class="navbar-brand p-0" href="#">
@@ -15,18 +15,21 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav align-items-center ml-auto">
                 <li class="nav-item ">
-                    <a class="nav-link text-uppercase" routerLink="case-studies" routerLinkActive="active">Case
+                    <a class="nav-link text-uppercase" routerLink="case-studies" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active">Case
                         studies</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-uppercase" routerLink="services" routerLinkActive="active">Services</a>
+                    <a class="nav-link text-uppercase" routerLink="" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" routerLink="expertise" routerLinkActive="active">Experise</a>
+                    <a class="nav-link text-uppercase" routerLink="expertise" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active">Experise</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link_last text-uppercase" routerLink="about"
-                        routerLinkActive="active">About</a>
+                    <a class="nav-link nav-link_last text-uppercase" [routerLinkActiveOptions]="{exact:
+                            true}" routerLink="about" routerLinkActive="active">About</a>
                 </li>
                 <li class="nav-item">
                     <a routerLink="contact-us" class="btn btn-outline-light">Contact Us</a>
@@ -43,19 +46,23 @@
     <span class="navbar_mobile-close" (click)="isHidden = false">╳</span>
 
     <ul class="navbar_mobile-list">
-        <li class="nav-item ">
-            <a class="nav-link text-uppercase" routerLink="case-studies" routerLinkActive="active">Case studies</a>
+        <li class="nav-item pt-3">
+            <a class="nav-link text-uppercase" routerLink="case-studies" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active" (click)="isHidden = false">Case studies</a>
         </li>
-        <li class="nav-item active">
-            <a class="nav-link text-uppercase" routerLink="services" routerLinkActive="active">Services</a>
+        <li class="nav-item pt-3">
+            <a class="nav-link text-uppercase" routerLink="" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active" (click)="isHidden = false">Services</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link text-uppercase" routerLink="expertise" routerLinkActive="active">Experise</a>
+        <li class="nav-item pt-3">
+            <a class="nav-link text-uppercase" routerLink="expertise" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active" (click)="isHidden = false">Experise</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link nav-link_last text-uppercase" routerLink="about" routerLinkActive="active">About</a>
+        <li class="nav-item pt-3">
+            <a class="nav-link nav-link_last text-uppercase" routerLink="about" [routerLinkActiveOptions]="{exact:
+                            true}" routerLinkActive="active" (click)="isHidden = false">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item pt-3">
             <a href="#" class="navbar_mobile-button">Contact Us</a>
         </li>
 
