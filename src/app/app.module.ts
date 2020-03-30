@@ -9,6 +9,8 @@ import { ServicesComponent } from './services/services.component';
 import { ServicesContentComponent } from './services/services-content/services-content.component';
 import { FooterComponent } from './footer/footer.component';
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
+import { ExpertiseComponent } from './expertise/expertise.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CaseStudiesComponent } from './case-studies/case-studies.component';
     ServicesComponent,
     ServicesContentComponent,
     FooterComponent,
-    CaseStudiesComponent
+    CaseStudiesComponent,
+    ExpertiseComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
