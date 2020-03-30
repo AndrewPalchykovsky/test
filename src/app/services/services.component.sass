@@ -1,0 +1,157 @@
+@import ../../config
+
+
+// hero
+
+.d-mobile
+    display: none
+
+.hero-content
+    min-height: 423px
+    background-color: $bg
+    position: relative
+
+.hero-content__text
+    font-family: serif
+    font-size: 3rem
+    line-height: 3.625rem
+    color: white
+
+// .hero-content_col-10
+//     flex: 0 0 82.3333333333%
+//     max-width: 82.3333333333%
+
+.filter-container
+    bottom: 0
+
+.navbar-nav__filter .nav-item.active
+    border-bottom: 4px solid $accent
+
+.navbar-nav__filter
+    .nav-link
+        color: white
+        line-height: 1
+        font-weight: bold
+        font-family: 'DecimaNovaProBold', sans-serif
+    .nav-item.active
+        .nav-link
+            color: $accent
+
+@media (max-width: 980px)
+    .hero-content__text
+        width: 103%
+@media (max-width: 979px)
+    .d-desktop
+        display: none
+    .d-mobile
+        display: block
+@media (max-width: 554px)
+    .filter-container
+        overflow-x: auto
+    .hero-content
+        min-height: 147px
+    .hero-content__text
+        display: none
+
+// hero
+
+.service-content-header__header-title
+    padding-bottom: 2.3125rem
+    line-height: 1
+    font-family: serif
+    color: #105788
+
+.service-content-header__header-text
+    font-weight: 300
+    font-size: 1.75rem
+    font-family: 'DecimaNovaProLight', sans-serif
+    line-height: 2.375rem
+
+.service-content-header
+    padding-top: 3.75rem
+    padding-bottom: 3.75rem
+    position: relative
+
+.service-content-header:after
+    content: ''
+    background-image: url(../../assets/img/services-line.svg)
+    height: 21px
+    width: 100vw
+    background-size: 100%
+    position: absolute
+    bottom: 0
+    background-repeat: no-repeat
+
+.service-content-holder__title
+    color: $accent
+    font-family: serif
+    font-size: 2.25rem
+    margin-bottom: 20px
+    line-height: 1
+
+.service-content-holder__content
+    color: black
+    font-family: 'DecimaNovaProLight', sans-serif
+    font-size: 1.5rem
+    line-height: 2.125rem
+
+
+.service-content-holder__img-holder
+    height: 330px
+
+.service-content-holder__img
+    max-width: 400px
+    width: 100%
+
+.service-content-holder__link
+    font-family: 'DecimaNovaProLight', sans-serif
+    padding-left: 54px
+    padding-right: 54px
+    &:hover
+        color: $accent
+
+.service-content-container
+    padding-bottom: 60px
+
+.service-content-holder
+    padding-bottom: 60px
+
+.service-content-cta__text
+    color: #105788
+    font-family: serif
+    font-size: 3rem
+
+.service-content-cta
+    padding-top: 60px
+    border-top: 1px solid #e1e1e1
+
+.service-content-cta__button
+    margin-top: 40px
+
+.service-content-cta__text_mobile
+    display: none
+
+@media (max-width: 992px)
+    .service-content-header:after
+        background-size: cover
+        background-position: center
+@media (max-width: 768px)
+    .service-content-cta__text.service-content-cta_desktop
+        br
+            display: none
+@media (max-width:  554px)
+    .service-content-header__header-text,
+    .service-content-holder__title,
+    .service-content-holder__content,
+    .service-content-cta__text
+        font-size: 1.25rem
+        line-height: 1.875rem
+
+    .service-content-cta_desktop
+        display: none
+
+    .service-content-cta__text_mobile
+        display: block
+
+    .service-content-holder__img-holder
+        height: 250px
