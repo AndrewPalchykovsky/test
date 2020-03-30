@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   }
 
   showNav() {
-    console.log('Heloo');
     this.isHidden = true;
   }
 

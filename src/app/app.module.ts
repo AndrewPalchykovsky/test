@@ -8,6 +8,7 @@ import { ServicesHeroComponent } from './services/services-hero/services-hero.co
 import { ServicesComponent } from './services/services.component';
 import { ServicesContentComponent } from './services/services-content/services-content.component';
 import { FooterComponent } from './footer/footer.component';
+import { CaseStudiesComponent } from './case-studies/case-studies.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     ServicesHeroComponent,
     ServicesComponent,
     ServicesContentComponent,
-    FooterComponent
+    FooterComponent,
+    CaseStudiesComponent
   ],
   imports: [
     BrowserModule,
