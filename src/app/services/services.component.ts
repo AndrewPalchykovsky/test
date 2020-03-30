@@ -22,7 +22,7 @@ export class ServicesComponent implements OnInit {
   showAllClick() {
     this.showContent = 'All';
     this.showAll = true;
-    this.showMobile = true;
+    this.showMobile = false;
     this.showWeb = false;
     this.showAr = false;
     this.showDesign = false;
